@@ -1,6 +1,6 @@
 .container__articles {
    margin-top: 30px;
-}
-.articles__main {
-   margin: 0 20px 0 40px;
+   display: flex;
+   justify-content: center;
+   gap: 50px;
 }
