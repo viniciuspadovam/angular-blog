@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-big-card',
@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./big-card.component.css']
 })
 export class BigCardComponent implements OnInit {
+  @Input() photoCover: string = "";
+  @Input() cardTitle: string = "";
+  @Input() cardDescription: string = "";
 
   constructor() { }
 
@@ -13,3 +16,9 @@ export class BigCardComponent implements OnInit {
   }
 
 }
+
+/**
+ * https://www.unfe.org/wp-content/uploads/2019/04/SM-placeholder.png
+ * Saiu a nova versão do Angular
+ * Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam nihil ipsa eius numquam provident unde commodi voluptatem necessitatibus!
+ */
